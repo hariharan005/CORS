@@ -1,7 +1,7 @@
 # CORS
 Recon the vulnerable cors domain
 
-Installation:
+Installation:     
 $git clone https://github.com/hariharan005/CORS.git
 $ls
 $cd CORS
