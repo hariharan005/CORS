@@ -2,7 +2,11 @@
 Recon the vulnerable cors domain
 
 Installation:
-
+              $git clone https://github.com/hariharan005/CORS.git
+              $ls
+              $cd CORS
+              $python3 cors.py
+              
 
 USAGE:                       
        For scanning:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py                           
