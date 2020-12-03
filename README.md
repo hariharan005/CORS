@@ -2,10 +2,10 @@
 Recon the vulnerable cors domain
 
 Installation:     
-$git clone https://github.com/hariharan005/CORS.git
-$ls
-$cd CORS
-$python3 cors.py
+$git clone https://github.com/hariharan005/CORS.git     
+$ls    
+$cd CORS    
+$python3 cors.py   
               
 
 USAGE:                       
