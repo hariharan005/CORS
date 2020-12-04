@@ -5,17 +5,18 @@ import os
 cyan ='\033[36m'
 yellow ='\033[33m'
 white = '\033[37m'
+red = '\033[1;31m'
 def banner():
 	print (yellow)
-	print (" .-----------------------------.           ")
-	print (" |  Hi Hackers                 |           ")
-	print (" |  Tool   : "+ cyan + "C0RS              "+yellow+     "|")
-	print (" |  Author : @crypto_grapper_  |           ")
-	print (" |           Jai Hind          |           ")
-	print (" '-----------------------------'           ")
-	print ("                 ^      (\_/)    ")
-	print ("                 '----- (O.o)    ")
-	print ("                        (> <)    ")
+	print (" 			.-----------------------------.           ")
+	print (" 			|  Hi Hackers                 |           ")
+	print (" 			|  Tool   : "+ cyan + "C0RS              "+yellow+     "|")
+	print (" 			|  Author : @crypto_grapper_  |           ")
+	print (" 			|           Jai Hind          |           ")
+	print (" 			'-----------------------------'           ")
+	print ("        			         ^      (\_/)    ")
+	print ("                			 '----- (O.o)    ")
+	print ("                       			 	(> <)    ")
 	print (" ")
 def action():
 	url = sys.argv[1]
@@ -29,7 +30,7 @@ def action():
 
 def help():
 	banner()
-	print(cyan + "USAGE: \n")
+	print(red + "USAGE: \n")
 	print(yellow + "For scanning:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py \n")
 	print(yellow + "For scanning with output:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt>")
 	
