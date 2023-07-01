@@ -10,14 +10,21 @@ ls
 cd CORS    
 python3 cors.py
 ```
-              
+
+### How to Use CORS-Finder:
+
 ```
-USAGE:                       
-       For scanning:  
-              cat <domain.txt> | xargs -n1 -P10 python3 corss.py                           
-       For scanning with output:  
-              cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt>
+For scanning:
+       cat <domain.txt> | xargs -n1 -P10 python3 corss.py                           
+For scanning with output:  
+       cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt>
 ```
 
+### When its vulnerable:
+If the header returns the 
+       Access-Control-Allow-Origin: https://vulnerable.com/
+       Access-Control-Allow-Credentials: true
+
+Note: Not all the time its seems vulnerable you have to check with cors payload and in the authenticated manner also. Try to exploit and this tool is only for indentifying the vulnerable domain
 NOTE:  
-       In this tool i use sample domain file but you have to choose your own url file which you recon using some other recon tool.
+       In this tool i used sample domain file but you have to choose your own url file which you recon using some other recon tool.
