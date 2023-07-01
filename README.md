@@ -3,11 +3,11 @@
 
 ![alt text](https://raw.githubusercontent.com/hariharan005/CORS/main/banner/Screenshot%20from%202023-07-01%2015-15-12.png)
 
-### How to install CORS-Finder:   
-       git clone https://github.com/hariharan005/CORS.git     
-       ls    
-       cd CORS    
-       python3 cors.py   
+### How to install CORS-Finder:
+ git clone https://github.com/hariharan005/CORS.git     
+ ls    
+ cd CORS    
+ python3 cors.py   
               
 
 USAGE:                       
