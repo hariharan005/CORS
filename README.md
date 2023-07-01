@@ -26,5 +26,6 @@ If the header returns the
        Access-Control-Allow-Credentials: true
 
 Note: Not all the time its seems vulnerable you have to check with cors payload and in the authenticated manner also. Try to exploit and this tool is only for indentifying the vulnerable domain
+
 NOTE:  
        In this tool i used sample domain file but you have to choose your own url file which you recon using some other recon tool.
