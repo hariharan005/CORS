@@ -1,44 +1,51 @@
+#!/usr/bin/env python3
+
+
+#Required libraries for this Project
 import sys
 from requests import get
 import os
+from colorama import Fore
 
-cyan ='\033[36m'
-yellow ='\033[33m'
-white = '\033[37m'
-red = '\033[1;31m'
+
+#This function will holds the banner of the project
 def banner():
-	print (yellow)
-	print (" 			.-----------------------------.           ")
-	print (" 			|  Hi Hackers                 |           ")
-	print (" 			|  Tool   : "+ cyan + "C0RS              "+yellow+     "|")
-	print (" 			|  Author : @crypto_grapper_  |           ")
-	print (" 			|           Jai Hind          |           ")
-	print (" 			'-----------------------------'           ")
-	print ("        			         ^      (\_/)    ")
-	print ("                			 '----- (O.o)    ")
-	print ("                       			 	(> <)    ")
-	print (" ")
+	text = '''
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n
+	+     CORS-Finder 🛠️ is a tool used to indentify cross-origin        +\n
+	+     resource sharing vulnerabilities                               +\n
+	+     Use this tool at your own risk                                 +\n
+	+     Usage might be illegal in certain circumstances                +\n
+	+     Designed for educational purposes only                         +\n
+	+     Author: @crypto_grapper_                                       +\n
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'''
+	print(Fore.GREEN + text, "\n")
+
+
 def action():
 	url = sys.argv[1]
 	response = get(url, headers={'User-Agent': 'Mozilla/5.0', 'Origin': 'https://example.com'})
 	status = response.headers
-	print("\n\n")
-	print(cyan, url)
 	print("\n")
-	print(white, status)
+	print(Fore.GREEN, url)
+	print("\n")
+	print(Fore.WHITE, status)
 	print("")
 
 def help():
+	print(Fore.WHITE)
 	banner()
-	print(red + "USAGE: \n")
-	print(yellow + "For scanning:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py \n")
-	print(yellow + "For scanning with output:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt>")
+	print(Fore.GREEN + "USAGE: \n")
+	print(Fore.YELLOW + "For scanning:  cat <domain.txt> | xargs -n1 -P10 python3 cors.py \n")
+	print(Fore.YELLOW + "For scanning with output:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt> \n")
 	
 if (len(sys.argv)<=1):
 	os.system("clear")
 	banner()
+	print(Fore.WHITE)
 	print("You must provide a target. Use -h or --help for help. \n")
-	print("EG: python3 cors.py -h or  python3 cors.py --help")
+	print("Usage: python3 cors.py -h or  python3 cors.py --help \n")
+
 	print(" ")
 	sys.exit()        
 

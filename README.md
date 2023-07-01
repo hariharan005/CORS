@@ -1,5 +1,5 @@
-# CORS
-Recon the vulnerable cors domain
+# CORS-Finder
+## This tools is developed for identifying the vulnerable cors domain
 
 Installation:     
 git clone https://github.com/hariharan005/CORS.git     
