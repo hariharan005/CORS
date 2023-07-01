@@ -1,6 +1,8 @@
 # CORS-Finder
 ## This tools is developed for identifying the vulnerable cors domain
 
+![alt text](https://raw.githubusercontent.com/hariharan005/CORS/main/banner/Screenshot%20from%202023-07-01%2015-15-12.png)
+
 Installation:     
 git clone https://github.com/hariharan005/CORS.git     
 ls    
