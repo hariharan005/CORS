@@ -1,7 +1,7 @@
 # CORS-Analyzer
 ## This tools is developed for identifying the vulnerable cors domain
 
-![alt text](lib/banner/cors-analyzer.png)
+![alt text](https://raw.githubusercontent.com/hariharan005/CORS/main/lib/banner/cors-analyzer.png)
 
 ### How to install CORS-Analyzer:
 ```
@@ -27,7 +27,7 @@ If you want to install the latest version of CORS-Analyzer just uninstall the ol
 
 For upgrade, use the following command,
     pip install --upgrade cors-analyzer
-    
+
 For ignore the cache, use the following command,
     pip install --ignore-cache cors-analyzer
 ```
