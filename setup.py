@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name="CORS-Analyzer",
-    version= '1.0.8',
+    version= '1.0.9',
     author= 'Hariharan',
     description= 'The cors-analyzer package is used to find the vulnerable CORS domains',
     long_description=long_description,

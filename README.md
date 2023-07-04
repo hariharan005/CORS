@@ -1,7 +1,7 @@
 # CORS-Analyzer
 ## This tools is developed for identifying the vulnerable cors domain
 
-![alt text](https://raw.githubusercontent.com/hariharan005/CORS/main/lib/banner/cors-analyzer.png)
+![alt text](https://raw.githubusercontent.com/hariharan005/CORS/main/lib/banner/cors-analyzerfull.png)
 
 ### How to install CORS-Analyzer:
 ```
