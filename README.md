@@ -1,15 +1,35 @@
-# CORS-Finder
+# CORS-Analyzer
 ## This tools is developed for identifying the vulnerable cors domain
 
-![alt text](https://raw.githubusercontent.com/hariharan005/CORS/main/banner/Screenshot%20from%202023-07-01%2015-15-12.png)
+![alt text](lib/banner/cors-analyzer.png)
 
-### How to install CORS-Finder:
+### How to install CORS-Analyzer:
 ```
 git clone https://github.com/hariharan005/CORS.git     
 ls    
 cd CORS
-sudo pip3 install -r requirements.txt    
-python3 cors.py
+sudo pip3 install -r requirements.txt 
+cd lib && chmod +x cors.py
+sudo ln -s "$(pwd)/cors.py" /usr/local/bin/cors-analyzer 
+cors-analyzer
+```
+Now type "cors-analyzer" to access the CORS analyzer tool from anywhere
+
+### How to install using pip:
+
+```
+For first time installation use the following command,
+    pip install cors-analyzer
+
+If you want to install the latest version of CORS-Analyzer just uninstall the old version using the following command,
+    pip uninstall cors-analyzer
+    pip install --upgrade cors-analyzer
+
+For upgrade, use the following command,
+    pip install --upgrade cors-analyzer
+    
+For ignore the cache, use the following command,
+    pip install --ignore-cache cors-analyzer
 ```
 ### Python Version:
 * Python 3 (3.x.x) latest version
