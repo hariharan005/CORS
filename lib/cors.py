@@ -54,15 +54,15 @@ def help():
 	print(Fore.WHITE)
 	banner()
 	print(Fore.GREEN + "USAGE: \n")
-	print(Fore.WHITE + "For scanning:  cat <domain.txt> | xargs -n1 -P10 python3 cors.py \n")
-	print(Fore.WHITE + "For scanning with output:  cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt> \n")
+	print(Fore.WHITE + "For scanning:  cat <domain.txt> | xargs -n1 -P10 cors-analyzer \n")
+	print(Fore.WHITE + "For scanning with output:  cat <domain.txt> | xargs -n1 -P10 cors-analyzer | tee -a <output.txt> \n")
 	
 if (len(sys.argv)<=1):
 	os.system("clear")
 	banner()
 	print(Fore.WHITE)
 	print("You must provide a target. Use -h or --help for help. \n")
-	print("Usage: python3 cors.py -h or  python3 cors.py --help \n")
+	print("Usage: cors-analyzer -h or cors-analyzer --help \n")
 
 	print(" ")
 	sys.exit()        
@@ -73,6 +73,9 @@ elif (str(sys.argv[1]) == "-h" or str(sys.argv[1]) == "--help"):
 	sys.exit()
 	
 elif (len(sys.argv)>=1):
-	os.system("clear")
-	banner()
-	action()
+	def main():
+		action()
+
+
+if __name__ == "__main__":
+	main()

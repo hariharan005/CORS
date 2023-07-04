@@ -38,9 +38,9 @@ For ignore the cache, use the following command,
 
 ```
 For scanning:
-       cat <domain.txt> | xargs -n1 -P10 python3 corss.py                           
+       cat <domain.txt> | xargs -n1 -P10 cors-analyzer                           
 For scanning with output:  
-       cat <domain.txt> | xargs -n1 -P10 python3 corss.py | tee -a <output.txt>
+       cat <domain.txt> | xargs -n1 -P10 cors-analyzer | tee -a <output.txt>
 ```
 
 ### When its vulnerable:
